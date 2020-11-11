@@ -17,18 +17,13 @@ Republishing is not prohibited by kaggle
 
 ## Background
 The following bullets highlights related and previous work done in the past and general observations on the type of work done
-- https://data.london.gov.uk/blog/electricity-consumption-in-a-sample-of-london-households/
-  - This comes from the same people who published the data set. They ran simple analyses using tableau on energy consumption over time of the various types of dynamic pricing algorithms. Mainly, the difference between high, avg, and low rates.
-- https://www.researchgate.net/profile/James_Schofield6/publication/293176172_Low_Carbon_London_project_Data_from_the_dynamic_time-of-use_electricity_pricing_trial_2013/links/56b6889d08ae5ad36059b61c.pdf
-  - This is the official publication of the dataset which describes the fields of data, along with specifics of the data collection process, bias, anonymity, and more
-- https://ieeexplore.ieee.org/abstract/document/8322199
-  - This article focuses on the many different data sets that have been used in the smart meter field, and the challenges within them, including visualization.
-  - According to this article, as of march 2018, there were only two refernces to this data!
-  - As of 2019, this has gone to 13 references.
-    - 7 in 2019 alone! Clearly this is an exploding data source of interest, smart meters are on the rise!
-      - I think this may be off by one as according to google scholar, [this paper](https://www.sciencedirect.com/science/article/pii/S1050173818301117), which discusses a heart disease, supposedly references this data set.
+- https://www.kaggle.com/mirichoi0218/insurance/activity
+  - The problems has been extensively worked on by the data science community. They have employed numerous techniques including but not limited to classfication, regression and clustering. The problem provides dual benefits as it allows people to understand the medical bills based on known entities (known by customer) and allows new data scientist to test and improve their skills 
+- https://people.csail.mit.edu/gjw/papers/healthcare.pdf
+  - Scientist at MIT worked on identyfying health insurance cost using the claims data of about 800k individuals, with about 200k individuals as the test set (out of sample). The approach used in the paper includes multiple variables outside of the indiviuals demographics. They use classification trees and clustering to create groups that can be explained by a set of characterstics. They focus on grouping people with similar claims and with the price of claim as one of the attribute
+
 __Summary of background__
-There seems to be an increasing rate of exploration and usage of this dataset among others in the smart meter field. The work so far on this dataset on its own is minimal. Most research questions referencing this dataset are exploring multiple at once, often interested in creating probabilistic models for peak load times and volumes. This ties nicely into my research questions
+
 ## Research Questions
 ### Basics
 - What are the different variables that impact the individual medical insurance cost 
