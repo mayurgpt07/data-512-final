@@ -34,10 +34,10 @@ __Summary of background__
   - The third step would be to use different visualizations to understand the relations between different features and medical insurance cost
 - Can we create a model that can compute the medical insurance cost of individual? What is the average error that can be expected from the new data?
   - To address the second question, I will implement **4 differnt models** using **scikit-learn** package:
-    - Linear Regression Model: The linear regression model will simply try to use all the input variables to generate the best possible model
-    - Polynomial Regression Model: The polynomial regression model will add higher degree variables (Squared, cubic values of given inputs) to the linear inputs. We will then use linear regression on all the variables to get the best possible model
-    - L1 Polynomial Regression Model: We will use the polynomial variables generated in the previous step and use an L1 regularized linear regression model on it. The L1 regularizer automatically filters the uneccesary variables, therefore providing models with lesser complexity
-    - Random Forest Model - The random forest regressor is a non linear regression model which allows us to observe more complex relations between the input and outputs 
+    - **Linear Regression Model**: The linear regression model will simply try to use all the input variables to generate the best possible model
+    - **Polynomial Regression Model**: The polynomial regression model will add higher degree variables (Squared, cubic values of given inputs) to the linear inputs. We will then use linear regression on all the variables to get the best possible model
+    - **L1 Polynomial Regression Model**: We will use the polynomial variables generated in the previous step and use an L1 regularized linear regression model on it. The L1 regularizer automatically filters the uneccesary variables, therefore providing models with lesser complexity
+    - **Random Forest Model** - The random forest regressor is a non linear regression model which allows us to observe more complex relations between the input and outputs 
 ### References
 - J. Chem. (2019). Reactive SINDy: Discovering governing reactions from concentration data. AIP The journal of chemical physics. https://aip.scitation.org/doi/10.1063/1.5066099
 - Mangan, N. M., Askham, T., Brunton, S. L., Kutz, J. N., & Proctor, J. L. (2019). Model selection for hybrid dynamical systems via sparse regression. Proceedings. Mathematical, physical, and engineering sciences, 475(2223), 20180534. doi:10.1098/rspa.2018.0534
