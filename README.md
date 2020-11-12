@@ -3,7 +3,7 @@
 ## Title: Energy and demographics, how do we use it?
 ## Data: https://www.kaggle.com/mirichoi0218/insurance
 ## Description
-Medical insurance bills are the summary of the cost incurred by the participants of the plan, for the different medical services that they availed. Generally an insurance company has multiple criterias to calculate the amount
+Medical insurance cost are the premium each individual pays for getting a medical insurance from any private or government insitute. These premium are decided on the basis of the plans and services the individual applies for. According to [eHealthInsurance](https://www.ehealthinsurance.com/resources/affordable-care-act/much-health-insurance-cost-without-subsidy), for unsubsidized customers in 2019, premiums for individual coverage averaged $462 per month and around $199 with subsidy. Therefore, an individual spends in the range of $2388 to $5988 in a year. If a person in investing such an amount of money, then it is important for them to understand the details of how things work outside of selecting a plan
 
 ## Motivation / Problem Statement
 In light of the current situation, I realized that there exists a knowledge gap in the insurance policies and services, therefore I wanted to understand more about how individuals are billed for their medical insurances. Putting myself in the position of a customer, I thought that I'll only be aware of my personal details amd won't have any visibility to the internal parameters of the insurance companies. Hence, with the basic details can I figure out the reasons for my bill? or how much bill I can get in future?  
@@ -17,9 +17,11 @@ Republishing is not prohibited by kaggle
 - The data is a small random subset of the whole population and inferences from this data cannot be generalized to the whole population
 
 ## Background
-The following bullets highlights related and previous work done in the past and general observations on the type of work done
+The following bullets highlights related and previous work/studies done in the past and general observations on the type of work done
+- https://www.ehealthinsurance.com/resources/affordable-care-act/much-health-insurance-cost-without-subsidy
+  - An article by the ehealth describing the amount spent by an individual or family yearly on medical insurance premiums
 - https://www.kaggle.com/mirichoi0218/insurance/activity
-  - The problems has been extensively worked on by the data science community. They have employed numerous techniques including but not limited to classfication, regression and clustering. The problem provides dual benefits as it allows people to understand the medical bills based on known entities (known by customer) and allows new data scientist to test and improve their skills 
+  - The problems has been extensively worked on by the data science community. They have employed numerous techniques including but not limited to classfication, regression and clustering. The problem provides dual benefits as it allows people to understand the medical bills based on known entities (known by customer) and allows new data scientist to test and improve their skills
 - https://people.csail.mit.edu/gjw/papers/healthcare.pdf
   - Scientist at MIT worked on identyfying health insurance cost using the claims data of about 800k individuals, with about 200k individuals as the test set (out of sample). The approach used in the paper includes multiple variables outside of the indiviuals demographics. They use classification trees and clustering to create groups that can be explained by a set of characterstics. They focus on grouping people with similar claims and with the price of claim as one of the attribute
 
