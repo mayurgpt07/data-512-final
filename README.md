@@ -3,14 +3,10 @@
 ## Title: Energy and demographics, how do we use it?
 ## Data: https://www.kaggle.com/mirichoi0218/insurance
 ## Description
-Medical insurance cost are the premium each individual pays for getting a medical insurance from any private or government insitute. These premium are decided on the basis of the plans and services the individual applies for. According to [eHealthInsurance](https://www.ehealthinsurance.com/resources/affordable-care-act/much-health-insurance-cost-without-subsidy), for unsubsidized customers in 2019, premiums for individual coverage averaged $462 per month and around $199 with subsidy. Therefore, an individual spends in the range of $2,388 to $5,988 in a year. If a person in investing such an amount of money, then it is important for them to understand the details of how things work outside of selecting a plan
+Medical insurance costs are the premium each individual pays for getting medical insurance from any private or government institute. These premiums are decided based on the plans and services the individual applies for. According to [eHealthInsurance](https://www.ehealthinsurance.com/resources/affordable-care-act/much-health-insurance-cost-without-subsidy), for unsubsidized customers in 2019, premiums for individual coverage averaged $462 per month and around $199 with a subsidy. Therefore, an individual spends in the range of $2,388 to $5,988 in a year. If a person in investing such an amount of money, then it is important for them to understand the details of how things work outside of selecting a plan
 
 ## Motivation / Problem Statement
-In light of the current situation, I realized that there exists a knowledge gap in the insurance policies and services, therefore I wanted to understand more about how individuals are billed for their medical insurances. Putting myself in the position of a customer, I thought that I'll only be aware of my personal details amd won't have any visibility to the internal parameters of the insurance companies. Hence, with the basic details can I figure out the reasons for my bill? or how much bill I can get in future?  
-
-## Terms of use
-Republishing is not prohibited by kaggle
-#### License: Database: Open Database, Contents: Database Contents
+In light of the current situation, I realized that there exists a knowledge gap in the insurance policies and services, therefore I wanted to understand more about how individuals are billed for their medical insurances. Putting myself in the position of a customer, I thought that I will only be aware of my details and won't have any visibility of the internal parameters of the insurance companies. Hence, with these details can I figure out the reasons for my bill? or what bill I can get in the future?  
 
 ## Unknowns and dependencies
 - Although in the real world these features are not enough to adequately describe the health insurance bills, we can start with these limited columns and then gradually improve our analysis as we get new data
@@ -25,12 +21,11 @@ The following bullets highlights related and previous work/studies done in the p
 - https://people.csail.mit.edu/gjw/papers/healthcare.pdf
   - Scientist at MIT worked on identyfying health insurance cost using the claims data of about 800k individuals, with about 200k individuals as the test set (out of sample). The approach used in the paper includes multiple variables outside of the indiviuals demographics. They use classification trees and clustering to create groups that can be explained by a set of characterstics. They focus on grouping people with similar claims and with the price of claim as one of the attribute
 
-__Summary of background__
-
 ## Research Questions
 - What are the different variables that impact the individual medical insurance cost 
   - To address this question, I plan on running a correlation aand colinearity analysis on the variables. The correlation will tell us about how much each variable contributes to the cost (in a linear way). The colinearity can tell us if two variables are mutually related to each other and whether we need both of them to accurately understand the medical insurance cost. We will use the packages **pandas** and **statsmodel** to calculate the correlation and colinearity respectively
-  - Another method is to use **sckit-learn** package and implement **Random Forest Regression** with the medical insurance price as the predictor variable. The random forest regressor comes with an added advantages of generating the *feature importance* matrix. 
+  - Another method is to use **sckit-learn** package and implement **Random Forest Regression** with the medical insurance price as the predictor variable. The random forest regressor comes with an added advantages of generating the *feature importance* matrix.
+  - I will also use the permutation feature importance method to analyze the impact of on a simple model when one of the feature is rendered unusable. The loss in the predictive power of the algorithm will determine how much a particular feature is important for a model 
   - The third step would be to use different visualizations to understand the relations between different features and medical insurance cost
 - Can we create a model that can compute the medical insurance cost of individual? What is the average error that can be expected from the new data?
   - To address the second question, I will implement **4 different models** using **scikit-learn** package:
@@ -39,4 +34,10 @@ __Summary of background__
     - **L1 Polynomial Regression Model**: We will use the polynomial variables generated in the previous step and use an L1 regularized linear regression model on it. The L1 regularizer automatically filters the uneccesary variables, therefore providing models with lesser complexity
     - **Random Forest Model** - The random forest regressor is a non linear regression model which allows us to observe more complex relations between the input and outputs 
 ### References
-Add references to scikit-learn
+- Pedregosa, F. (2011). Scikit-learn: Machine Learning in Python. Retrieved from https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html
+- Seabold, S., & Perktold, J. (2010). statsmodels: Econometric and statistical modeling with python. *In 9th Python in Science Conference.*
+- Santhanam, N. (2019, October 14). Explain your machine learning with feature importance. Retrieved from https://towardsdatascience.com/explain-your-machine-learning-with-feature-importance-774cd72abe
+
+## License
+Database: [Open Database, Contents: Database Contents](http://opendatacommons.org/licenses/dbcl/1.0/) <br />
+Republishing is not prohibited by kaggle
