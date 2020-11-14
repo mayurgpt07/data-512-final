@@ -1,6 +1,6 @@
 
 
-## Title: Energy and demographics, how do we use it?
+## Title: Medical Insurance Bills
 ## Data: https://www.kaggle.com/mirichoi0218/insurance
 ## Description
 Medical insurance costs are the premium each individual pays for getting medical insurance from any private or government institute. These premiums are decided based on the plans and services the individual applies for. According to [eHealthInsurance](https://www.ehealthinsurance.com/resources/affordable-care-act/much-health-insurance-cost-without-subsidy), for unsubsidized customers in 2019, premiums for individual coverage averaged $462 per month and around $199 with a subsidy. Therefore, an individual spends in the range of $2,388 to $5,988 in a year. If a person in investing such an amount of money, then it is important for them to understand the details of how things work outside of selecting a plan
