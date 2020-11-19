@@ -23,13 +23,22 @@ The following bullets highlights related and previous work/studies done in the p
 
 ## Research Questions
 - **What are the different variables that impact the individual medical insurance cost?** <br />
-**Null Hypothesis** - *A particular feature has no relevance in the dataset (check for all features)* 
-  - To address this question, I plan on running a correlation aand colinearity analysis on the variables. The correlation will tell us about how much each variable contributes to the cost (in a linear way). The colinearity can tell us if two variables are mutually related to each other and whether we need both of them to accurately understand the medical insurance cost. We will use the packages **pandas** and **statsmodel** to calculate the correlation and colinearity respectively
+**Null Hypothesis** - *A particular feature has no relevance in the dataset (check for all features)* <br />
+**Significance** - The answer to the question will allow user to see the root causes of the high medical insurance cost.
+
+
+- **Can we create a model that can compute the medical insurance cost of individual? What is the average error that can be expected from the new data?** <br />
+**Null Hypothesis** - *Any combination of different features in the dataset have no impact on the medical insurance cost* <br />
+**Significance** - The prediction capabilities of the model will allow user to get an estimate of medical insurance cost for a set of observation present or not present in the current data
+
+## Methodology
+#### First Research Question
+  - To address the first question, I plan on running a correlation aand colinearity analysis on the variables. The correlation will tell us about how much each variable contributes to the cost (in a linear way). The colinearity can tell us if two variables are mutually related to each other and whether we need both of them to accurately understand the medical insurance cost. We will use the packages **pandas** and **statsmodel** to calculate the correlation and colinearity respectively
   - Another method is to use **sckit-learn** package and implement **Random Forest Regression** with the medical insurance price as the predictor variable. The random forest regressor comes with an added advantages of generating the *feature importance* matrix. Random forest is a robust algorithm which controls the high variance of tree based methods, therefore the predictions and the feature importance matrix are reliable
   - I will also use the permutation feature importance method to analyze the impact of on a simple model when one of the feature is rendered unusable. The loss in the predictive power of the algorithm will determine how much a particular feature is important for a model
   - The fourth step would be to use different visualizations to understand the relations between different features and medical insurance cost. Visual aids help us see the *feature importance* in addition to observing the numbers
-- **Can we create a model that can compute the medical insurance cost of individual? What is the average error that can be expected from the new data?** <br />
-**Null Hypothesis** - *Any combination of different features in the dataset have no impact on the medical insurance cost* 
+
+#### Second Research Question
   - To address the second question, I will implement **4 different models** using **scikit-learn** package:
     - **Linear Regression Model**: The linear regression model will simply try to use all the input variables to generate the best possible model. It is comparitively easier to understand and gives a great first look at the prediction capabilities from the data   
     - **Polynomial Regression Model**: The polynomial regression model will add higher degree variables (Squared, cubic values of given inputs) to the linear inputs. We will then use linear regression on all the variables to get the best possible model. Polynomial regression helps us introduce non-linearity in the variables, which allows us to increase the number of features and improve the predictive strength of the model
