@@ -19,6 +19,33 @@ We try to analyze the following questions to better understand the medical insur
   - Polynomial Regression
   - L1-Regularized Polynomial Regression
   
+
+## Data
+The dataset is publically available at [Kaggle](https://www.kaggle.com/mirichoi0218/insurance)
+
+### Folder Contents
+```
+.
+├── README.md
+├── LICENSE
+├── data
+│    └── insurance.csv
+├── img
+│    ├── ChargesInRegion.png
+│    ├── ChargesinRegionForGenders.png
+│    ├── ChargesInRegionForSmoker.png
+│    ├── ChargesInRegionForChildren.png
+│    ├── Correlation.png
+│    ├── DistributionOfCharges.png
+│    ├── LogDistributionOFCharges.png
+│    ├── FeatureImportance.png
+│    ├── ChargesVsBMIWithSmoker.png
+│    ├── ChargesVsAgeWithSmoker.png
+│    ├── ChargesVsChildrenWithSmoker.png
+│    └── ModelComparison.png
+└── Medical Insurance Bills - An analysis of individual cost.ipynb
+```
+  
 ## Finding
 
 We performed multiple analysis to understand the data and derive some obervations. These analysis provided some very interesting results for different research questions
@@ -47,9 +74,6 @@ It was a successful analysis, as we were able to determine answers for the resea
 **Can we create a model that can compute the medical insurance cost of individual? What is the average error that can be expected from the new data?** <br />
 - **Null Hypothesis** - *There will be no viable prediction of medical insurance cost by any combination of features* <br />
 - **Result** - Since a polynomial regressor was able to fit the data with minimum test MSE, we can reject the null hypothesis
-
-## Data
-The dataset is publically available at [Kaggle](https://www.kaggle.com/mirichoi0218/insurance)
 
 ## License
 Database: [Open Database, Contents: Database Contents](http://opendatacommons.org/licenses/dbcl/1.0/) <br />
