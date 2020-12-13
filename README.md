@@ -1,6 +1,6 @@
 
 
-## Title: Medical Insurance Bills
+## Title: Medical Insurance Bills - An analysis of individual charges
 ## Aim 
 Every student in the university has to select some kind of insurance as they enter into a new quarter or year. These insurances can be either the one provided by the university or from any external private health insurance company. But I noticed that most of the students are not aware of why they are paying a particular premium or whether different people have different charges?  
 Therefore, the aim of the analysis is to understand the medical insurance charges from the perspective of the customer. Now a customer might not be aware of all the factors that an insurance company uses, hence the analysis includes details pertaining to the customer only. 
