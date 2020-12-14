@@ -62,7 +62,8 @@ Apart from the observations pertaining to research questions, there were 2 other
 #### Limitations:
 Although the analysis gave some great observations and insights, there are a few aspects that limits the analysis in the real world scenario:
 * The analysis is done from the perspective of the customer, hence the data might reflect different factors medical insurance companies use to derive the premiums
-* The data is a small random subset of the whole population and inferences from this data cannot be generalized to the whole population.
+* The data is a small random subset of the whole population and inferences from this data cannot be generalized to the whole population
+* The models can be further improved by different techniques for hyperparameter optimization
 
 ## Conclusion
 It was a successful analysis, as we were able to determine answers for the research question and determine whether we could accept or reject the null hypothesis
