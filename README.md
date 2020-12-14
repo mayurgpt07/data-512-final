@@ -51,6 +51,9 @@ The dataset is publically available at [Kaggle](https://www.kaggle.com/mirichoi0
 We performed multiple analysis to understand the data and derive some obervations. These analysis provided some very interesting results for different research questions
 * We first discovered that being a **smoker** results more medical insurance charges. For each of the regions we saw the significant difference in the charges and the same was found when exploring **BMI** and **age**
 * The other intersting observation was that **BMI** and **age** had some level of impact on charges. Although, the association was not as strong as being a **smoker** but they came out significant n feature importance chart and permutation feature testing
+
+![Feature Importance](https://github.com/mayurgpt07/data-512-final/blob/master/img/FeatureImportance.png)
+
 * Based on the mean squared error on test data, we saw that **Polynomial Regressor** works best on our data. This also indicates that their are exist some linear association between charges and higher degree transformation of features
 
 ![Model Comparison](https://github.com/mayurgpt07/data-512-final/blob/master/img/ModelComparison.png)
